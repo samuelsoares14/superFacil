@@ -1,0 +1,152 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#f2f5f9;
+  display:flex;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+  width:250px;
+  height:100vh;
+  background:#163042;
+  color:white;
+  padding:20px;
+  position:fixed;
+  left:0;
+  top:0;
+}
+
+.logo{
+  margin-bottom:40px;
+}
+
+.logo h2{
+  font-size:28px;
+}
+
+.menu{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.menu a{
+  text-decoration:none;
+  color:white;
+  padding:14px;
+  border-radius:10px;
+  transition:.3s;
+}
+
+.menu a:hover{
+  background:#1f435c;
+}
+.container{
+  margin-left:250px;
+  width:calc(100% - 250px);
+  padding:30px;
+}
+
+.form-receita{
+  background:white;
+  padding:30px;
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.form-receita h1{
+  color:#163042;
+  margin-bottom:25px;
+}
+
+.form-receita h2{
+  color:#163042;
+  margin:25px 0 15px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
+
+.full{
+  grid-column:1 / -1;
+}
+
+.input-group{
+  display:flex;
+  flex-direction:column;
+}
+
+.input-group label{
+  margin-bottom:5px;
+  font-size:14px;
+}
+
+.input-group input,
+.input-group select{
+  padding:12px;
+  border:1px solid #ddd;
+  border-radius:8px;
+}
+
+.ingredientes-table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.ingredientes-table th,
+.ingredientes-table td{
+  padding:10px;
+  border:1px solid #ddd;
+}
+
+.ingredientes-table input,
+.ingredientes-table select{
+  width:100%;
+  padding:10px;
+  border:1px solid #ddd;
+  border-radius:6px;
+}
+
+.btn-add{
+  margin-top:15px;
+  background:#22c55e;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.buttons{
+  display:flex;
+  gap:10px;
+  margin-top:25px;
+}
+
+.btn-save,
+.btn-cancel{
+  flex:1;
+  border:none;
+  padding:12px;
+  border-radius:8px;
+  color:white;
+  cursor:pointer;
+}
+
+.btn-save{
+  background:#163042;
+}
+
+.btn-cancel{
+  background:#e74c3c;
+}

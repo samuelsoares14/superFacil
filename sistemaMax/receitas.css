@@ -1,0 +1,184 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: #f2f5f9;
+  display: flex;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+  width: 250px;
+  height: 100vh;
+  background: #163042;
+  color: white;
+  padding: 10px;
+  position: fixed;
+}
+
+.logo{
+  margin-bottom: 40px;
+}
+
+.logo h2{
+  font-size: 28px;
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu a{
+  text-decoration: none;
+  color: white;
+  padding: 14px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.menu a:hover{
+  background: #1f435c;
+}
+
+/* MAIN */
+
+.main-content{
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  padding: 30px;
+}
+
+/* TOPBAR */
+
+.topbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.topbar input{
+  width: 350px;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+}
+
+.user{
+  background: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+/* CONTEÚDO */
+.content{
+    margin-left:250px;
+    width:calc(100% - 250px);
+    padding:30px;
+}
+
+.container{
+    padding:30px;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.header h1{
+    color:#172b4d;
+}
+
+.btn-nova-receita{
+    background:#22c55e;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+}
+
+.btn-nova-receita:hover{
+    background:#16a34a;
+}
+
+.filtros{
+    margin-bottom:25px;
+}
+
+.filtros input{
+    width:100%;
+    max-width:400px;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+.receitas-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fill,minmax(280px,1fr));
+    gap:20px;
+}
+
+.receita-card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.icone{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.receita-card h3{
+    color:#172b4d;
+    margin-bottom:10px;
+}
+
+.receita-card p{
+    color:#666;
+    margin-bottom:8px;
+}
+
+.acoes{
+    margin-top:15px;
+    display:flex;
+    gap:10px;
+}
+
+.editar{
+    flex:1;
+    background:#3b82f6;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.produzir{
+    flex:1;
+    background:#f59e0b;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:8px;
+    cursor:pointer;
+}

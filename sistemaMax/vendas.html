@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Vendas | SuperMarket</title>
+
+  <link rel="stylesheet" href="vendas.css">
+  <link rel="stylesheet" href="/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+
+  <aside class="sidebar">
+
+    <div class="logo">
+      <h2>SuperMarket</h2>
+    </div>
+
+    <nav class="menu">
+
+  <a href="index.html">🏠 Início</a>
+
+  <a href="frenteCaixa.html">💳 Frente de Caixa</a>
+
+  <a href="receitasProducao.html">📋 Receitas / Produção </a>
+
+  <a href="produtos.html">🛒 Produtos</a>
+
+  <a href="estoque.html">📦 Estoque</a>
+
+  <a href="vendas.html">💰 Vendas</a>
+
+  <a href="/cliente/clientes.html">👥 Clientes</a>
+
+  <a href="relatorios.html">📊 Relatórios</a>
+
+  <a href="configuracoes.html">⚙️ Configurações</a>
+
+</nav>
+
+  </aside>
+
+  <!-- MAIN -->
+
+  <main class="main-content">
+
+    <!-- TOPBAR -->
+
+    <header class="topbar">
+
+      <h1>Controle de Vendas</h1>
+
+      <button class="new-sale">
+        + Nova Venda
+      </button>
+
+    </header>
+
+    <!-- CARDS -->
+
+    <section class="cards">
+
+      <div class="card green">
+
+        <h3>Vendas Hoje</h3>
+
+        <p>R$ 2.450</p>
+
+      </div>
+
+      <div class="card blue">
+
+        <h3>Pedidos</h3>
+
+        <p>38</p>
+
+      </div>
+
+      <div class="card orange">
+
+        <h3>Ticket Médio</h3>
+
+        <p>R$ 64</p>
+
+      </div>
+
+      <div class="card red">
+
+        <h3>Canceladas</h3>
+
+        <p>2</p>
+
+      </div>
+
+    </section>
+
+    <!-- SEARCH -->
+
+    <section class="search-area">
+
+      <input
+        type="text"
+        placeholder="Buscar venda..."
+      >
+
+    </section>
+
+    <!-- TABLE -->
+
+    <section class="table-section">
+
+      <table>
+
+        <thead>
+
+          <tr>
+
+            <th>ID</th>
+
+            <th>Cliente</th>
+
+            <th>Produto</th>
+
+            <th>Quantidade</th>
+
+            <th>Total</th>
+
+            <th>Pagamento</th>
+
+            <th>Status</th>
+
+            <th>Ações</th>
+
+          </tr>
+
+        </thead>
+
+        <tbody>
+
+          <tr>
+
+            <td>#1001</td>
+
+            <td>Maria Silva</td>
+
+            <td>Arroz 5kg</td>
+
+            <td>2</td>
+
+            <td>R$ 49,80</td>
+
+            <td>PIX</td>
+
+            <td>
+              <span class="status paid">
+                Pago
+              </span>
+            </td>
+
+            <td>
+
+              <button class="view">
+                👁️
+              </button>
+
+              <button class="edit">
+                ✏️
+              </button>
+
+            </td>
+
+          </tr>
+
+          <tr>
+
+            <td>#1002</td>
+
+            <td>João Pedro</td>
+
+            <td>Leite Integral</td>
+
+            <td>5</td>
+
+            <td>R$ 27,45</td>
+
+            <td>Cartão</td>
+
+            <td>
+              <span class="status pending">
+                Pendente
+              </span>
+            </td>
+
+            <td>
+
+              <button class="view">
+                👁️
+              </button>
+
+              <button class="edit">
+                ✏️
+              </button>
+
+            </td>
+
+          </tr>
+
+          <tr>
+
+            <td>#1003</td>
+
+            <td>Ana Souza</td>
+
+            <td>Café</td>
+
+            <td>1</td>
+
+            <td>R$ 18,90</td>
+
+            <td>Dinheiro</td>
+
+            <td>
+              <span class="status cancel">
+                Cancelado
+              </span>
+            </td>
+
+            <td>
+
+              <button class="view">
+                👁️
+              </button>
+
+              <button class="edit">
+                ✏️
+              </button>
+
+            </td>
+
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </section>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Frente de Caixa | SuperMarket</title>
+
+  <link rel="stylesheet" href="caixa.css">
+  <link rel="stylesheet" href="/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+
+  <aside class="sidebar">
+
+    <div class="logo">
+      <h2>SuperMarket</h2>
+    </div>
+
+    <nav class="menu">
+
+      <a href="index.html">🏠 Início</a>
+
+  <a href="frenteCaixa.html">💳 Frente de Caixa</a>
+
+  <a href="receitasProducao.html">📋 Receitas / Produção </a>
+
+  <a href="produtos.html">🛒 Produtos</a>
+
+  <a href="estoque.html">📦 Estoque</a>
+
+  <a href="vendas.html">💰 Vendas</a>
+
+  <a href="/cliente/clientes.html">👥 Clientes</a>
+
+  <a href="relatorios.html">📊 Relatórios</a>
+
+  <a href="configuracoes.html">⚙️ Configurações</a>
+
+    </nav>
+
+  </aside>
+
+  <!-- MAIN -->
+
+  <main class="main-content">
+
+    <!-- TOPBAR -->
+
+    <header class="topbar">
+
+      <h1>Frente de Caixa</h1>
+
+      <div class="cashier-user">
+        👤 Operador: Samuel
+      </div>
+
+    </header>
+
+    <!-- SEARCH -->
+
+    <section class="search-area">
+
+      <input
+        type="text"
+        placeholder="Buscar produto..."
+      >
+
+    </section>
+
+    <!-- CAIXA CONTAINER -->
+
+    <section class="cashier-container">
+
+      <!-- PRODUTOS -->
+
+      <div class="products-area">
+
+        <h2>Produtos</h2>
+
+        <div class="product-grid">
+
+          <div class="product-card">
+
+            <img
+              src="https://images.unsplash.com/photo-1586201375761-83865001e31c?q=80&w=1200&auto=format&fit=crop"
+            >
+
+            <h3>Arroz 5kg</h3>
+
+            <p>R$ 24,90</p>
+
+            <button>Adicionar</button>
+
+          </div>
+
+          <div class="product-card">
+
+            <img
+              src="https://images.unsplash.com/photo-1515543904379-3d757afe72e3?q=80&w=1200&auto=format&fit=crop"
+            >
+
+            <h3>Feijão</h3>
+
+            <p>R$ 8,99</p>
+
+            <button>Adicionar</button>
+
+          </div>
+
+          <div class="product-card">
+
+            <img
+              src="https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=1200&auto=format&fit=crop"
+            >
+
+            <h3>Leite</h3>
+
+            <p>R$ 5,49</p>
+
+            <button>Adicionar</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARRINHO -->
+
+      <div class="cart-area">
+
+        <h2>Carrinho</h2>
+
+        <div class="cart-items">
+
+          <div class="cart-item">
+
+            <div>
+              <h4>Arroz 5kg</h4>
+              <p>2x R$ 24,90</p>
+            </div>
+
+            <span>R$ 49,80</span>
+
+          </div>
+
+          <div class="cart-item">
+
+            <div>
+              <h4>Leite</h4>
+              <p>1x R$ 5,49</p>
+            </div>
+
+            <span>R$ 5,49</span>
+
+          </div>
+
+        </div>
+
+        <!-- TOTAL -->
+
+        <div class="cart-total">
+
+          <h3>Total</h3>
+
+          <h2>R$ 55,29</h2>
+
+        </div>
+
+        <!-- PAGAMENTO -->
+
+        <div class="payment">
+
+          <h3>Forma de Pagamento</h3>
+
+          <select>
+
+            <option>PIX</option>
+
+            <option>Cartão Crédito</option>
+
+            <option>Cartão Débito</option>
+
+            <option>Dinheiro</option>
+
+          </select>
+
+        </div>
+
+        <!-- BUTTON -->
+
+        <button class="finish-sale">
+
+          ✅ Finalizar Venda
+
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+</html>

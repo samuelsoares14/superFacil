@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Novo Cliente | SuperMarket</title>
+
+  <link rel="stylesheet" href="novoCliente.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <aside class="sidebar">
+
+    <div class="logo">
+      <h2>SuperMarket</h2>
+    </div>
+
+    <nav class="menu">
+      <a href="/index.html">🏠 Início</a>
+      <a href="/frenteCaixa.html">💳 Frente de Caixa</a>
+      <a href="/receitasProducao.html">📋 Receitas / Produção</a>
+      <a href="/produtos.html">🛒 Produtos</a>
+      <a href="/estoque.html">📦 Estoque</a>
+      <a href="/vendas.html">💰 Vendas</a>
+      <a href="/cliente/clientes.html">👥 Clientes</a>
+      <a href="/relatorios.html">📊 Relatórios</a>
+      <a href="/configuracoes.html">⚙️ Configurações</a>
+    </nav>
+
+  </aside>
+
+  <main class="container">
+
+    <form class="form-cliente">
+
+      <h1>Novo Cliente</h1>
+
+      <div class="input-group">
+        <label>Nome Completo</label>
+        <input type="text" placeholder="Digite o nome do cliente">
+      </div>
+
+      <div class="input-group">
+        <label>Telefone</label>
+        <input type="text" placeholder="(11) 99999-9999">
+      </div>
+
+      <div class="input-group">
+        <label>E-mail</label>
+        <input type="email" placeholder="cliente@email.com">
+      </div>
+
+      <div class="input-group">
+        <label>Cidade</label>
+        <input type="text" placeholder="Digite a cidade">
+      </div>
+
+      <div class="input-group">
+        <label>Status</label>
+        <select>
+          <option>Ativo</option>
+          <option>Inativo</option>
+        </select>
+      </div>
+
+      <div class="buttons">
+        <button type="submit" class="btn-save">
+          Salvar Cliente
+        </button>
+
+        <button type="button" class="btn-cancel">
+          Cancelar
+        </button>
+      </div>
+
+    </form>
+
+  </main>
+
+</body>
+</html>
